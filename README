@@ -1,5 +1,20 @@
 By using Alchemy, you agree to accept the license agreement in license.txt
 
+Things to do to make this run on Ubuntu:
+mkdir bin/obj/ in root
+sudo apt-get install make
+sudo apt-get install build-essential g++
+sudo add-apt-repository ppa:ubuntu-toolchain -r/test
+sudo apt-get update
+sudo apt-get install gcc-4.7
+sudo apt-get install flex
+sudo apt-get install bison
+chmod +x /src/parser/replacefoly.pl
+chmod +x /src/parser/replacefolcpp.pl
+make depend
+make
+
+
 src/ contains source code and a makefile.
 doc/ contains a change log, and a manual in PDF, PostScript and html formats.
 exdata/ contains a simple example of Alchemy input files.
